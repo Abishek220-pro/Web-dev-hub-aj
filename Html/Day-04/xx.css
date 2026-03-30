@@ -1,0 +1,33 @@
+.profile{
+    display: flex;
+    flex-direction: column;
+}
+.pic1{
+    color:white;
+    background-color:#52de97; 
+    width:250px;
+    text-align: center;
+    padding:30px;
+    border-radius: 16px;
+    
+}
+.pic{
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.b1{
+    background-color: white;
+    color:#42b883;
+    border: none;
+    padding :8px 16px;
+    border-radius: 6px;
+}
+.b2{
+      background-color: white;
+    color:#42b883;
+    border: none;
+    padding :8px 16px;
+    border-radius: 6px;
+}
