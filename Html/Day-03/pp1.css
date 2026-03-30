@@ -1,0 +1,18 @@
+.card{
+    background-color: #00b7ff;
+    border:2px solid black;
+    margin: 10px 30px 50px 40px;
+    padding:23px;
+    text-align: center;
+    font: size 50px;
+    width: 200px;
+    height: 200px;
+}
+.e1{
+    color: green;
+}
+.e2{
+    border:3px solid red;
+    display:flexbox;
+    border-radius: 50%;
+}

@@ -1,0 +1,29 @@
+.parent{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    height: 100vh;
+    background-color: lightblue;
+    flex-wrap: wrap;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: darkred;
+    margin:5px;
+    flex:1;
+        
+
+}
+.p1{
+    display: flex;
+    flex-wrap:nowrap;
+
+}
+.b1{
+    width: 100px;
+    height:100px;
+    background-color: rgb(84, 194, 25);
+    margin:5px;
+}
+
