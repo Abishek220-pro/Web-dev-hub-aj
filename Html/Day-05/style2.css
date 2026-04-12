@@ -1,0 +1,32 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 80px 150px 150px 100px 60px;
+    grid-template-areas: "header header header"
+                         "sidebar main main"
+                         "sidebar main main"
+                         "sidebar stats stats"
+                         "footer footer footer";
+
+    gap:10px;
+}
+.header{
+    grid-area: header;
+    border: 5px solid greenyellow;
+}
+.sidebar{
+    grid-area: sidebar;
+    border:5px solid yellow;
+}
+.main{
+    grid-area: main;
+    border:5px solid rgb(26, 26, 12);
+}
+.stats{
+     grid-area: stats;
+    border:5px solid rgb(15, 36, 173);
+}
+.footer{
+    grid-area: footer;
+    border:5px solid fuchsia;
+}

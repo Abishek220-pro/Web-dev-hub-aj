@@ -1,61 +1,41 @@
 .container{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:10px;
-}
-.box1{
-       border:5px solid blue;
-       padding:20px;
-       color: red;
-       width:100px;
-       height:100px;
-       text-align: center;
-       background-color: cadetblue;
-}
-.box2{
-       border:5px solid rgb(234, 75, 22);
-       padding:20px;
-       color: rgb(85, 197, 11);
-       width:100px;
-       text-align: center;
-       height:100px;
-       background-color: rgb(1, 13, 13);
-}
-.box3{
-       border:5px solid rgb(234, 75, 22);
-       padding:20px;
-       color: rgb(85, 197, 11);
-       width:100px;
-       text-align: center;
-       height:100px;
-       background-color: rgb(9, 171, 41);
-}
-.box4{
-       border:5px solid rgb(228, 214, 209);
-       padding:20px;
-       color: rgb(30, 33, 28);
-       width:100px;
-       text-align: center;
-       height:100px;
-       background-color: rgb(195, 21, 195);
-}
-.box5{
-       border:5px solid rgb(20, 155, 74);
-       padding:20px;
-       color: rgb(85, 197, 11);
-       width:100px;
-       text-align: center;
-       height:100px;
-       background-color: rgb(100, 121, 241);
-}
-.box6{
-       border:5px solid rgb(146, 201, 18);
-       padding:20px;
-       color: rgb(32, 188, 209);
-       width:100px;
-       text-align: center;
-       height:100px;
-       background-color: rgb(191, 203, 203);
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       grid-template-rows: 80px 200px 150px 80px;
+       gap:10px;
+       grid-template-areas: "nav nav nav"
+                            "hero hero hero"
+                            "card1 card2 card3"
+                            "footer footer footer";
+.box{
+       display: flex;
+       justify-content: center;
+       align-items: center;
 }
 
-
+}
+.nav{
+       grid-area:nav;
+       border: 5px solid rgb(171, 54, 54);
+       justify-content: center;
+}
+.hero{
+       grid-area:hero;
+       border: 5px solid brown;
+}
+.card1{
+       grid-area:card1;
+       border:5px solid yellow
+}
+.card2{
+       grid-area:card2;
+       border:5px solid yellow
+}
+.card3{
+       grid-area:card3;
+       border:5px solid yellow
+}
+.footer{
+       grid-area:footer;
+       border:5px solid green;
+}
